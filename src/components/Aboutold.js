@@ -2,30 +2,30 @@ import React, { useState } from 'react'
 
 export default function About() {
 
-    // const [btntext, setBtntext] = useState('Enable Dark Mode')
-    // const [myStyle, setmySytle] = useState(
-    // {
-    //     color: "black",
-    //     backgroundColor: "white"
-    // })
+    const [btntext, setBtntext] = useState('Enable Dark Mode')
+    const [myStyle, setmySytle] = useState(
+    {
+        color: "black",
+        backgroundColor: "white"
+    })
 
-    // const toggleSytle = ()=>{
-    //     if(myStyle.color === "white"){
-    //         setmySytle({
-    //             color: "black",
-    //             backgroundColor: "white",
-    //             border: '1px solid white'
-    //         });
-    //         setBtntext('Enable Light Mode');
-    //     }
-    //     else{
-    //         setmySytle({
-    //             color: "white",
-    //             backgroundColor: "black"
-    //         });
-    //         setBtntext('Enable Dark Mode');
-    //     }
-    // }
+    const toggleSytle = ()=>{
+        if(myStyle.color === "white"){
+            setmySytle({
+                color: "black",
+                backgroundColor: "white",
+                border: '1px solid white'
+            });
+            setBtntext('Enable Light Mode');
+        }
+        else{
+            setmySytle({
+                color: "white",
+                backgroundColor: "black"
+            });
+            setBtntext('Enable Dark Mode');
+        }
+    }
 
     return (
         <div className='container' style={myStyle}>
