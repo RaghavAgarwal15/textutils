@@ -50,8 +50,8 @@ function App() {
       <Alert alert={alert}/>
       <div className="container my-3">
         <Routes>
-          <Route exact path="/" element={<TextForm heading = "Enter you text to analyse below" mode={mode} showAlert={showAlert}/>}/>
           <Route exact path="/about" element={<About mode={mode}/>}/>
+          <Route exact path="/" element={<TextForm heading = "Enter you text to analyse below" mode={mode} showAlert={showAlert}/>}/>
         </Routes>
       </div>
     </Router>
